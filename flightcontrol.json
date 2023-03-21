@@ -1,0 +1,49 @@
+{
+  "$schema": "https://app.flightcontrol.dev/schema.json",
+  "environments": [
+    {
+      "id": "production",
+      "name": "Production",
+      "region": "canada-1",
+      "source": {
+        "branch": "master"
+      },
+      "services": [
+        {
+          "id": "my-blitz",
+          "name": "My Blitz",
+          "type": "fargate",
+          "buildType": "nixpacks",
+          "cpu": 0.25,
+          "memory": 0.5,
+          "domain": "www.goblincore.biz",
+          "minInstances": 1,
+          "maxInstances": 1,
+          "buildCommand": "blitz prisma generate && blitz build && blitz prisma migrate deploy",
+          "startCommand": "blitz start",
+          "enableCloudfrontSwr": true,
+          "envVariables": {
+            "APP_ENV": "production",
+            "DATABASE_URL": {
+              "fromService": {
+                "id": "db",
+                "value": "dbConnectionString"
+              }
+            },
+            "SESSION_SECRET_KEY": "SESSION_SECRET_KEY"
+          }
+        },
+        {
+          "id": "db",
+          "name": "Database",
+          "type": "rds",
+          "engine": "postgres",
+          "engineVersion": "13",
+          "instanceSize": "db.t4g.micro",
+          "storage": 20,
+          "private": false
+        }
+      ]
+    }
+  ]
+}
