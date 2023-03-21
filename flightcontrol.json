@@ -3,15 +3,15 @@
   "environments": [
     {
       "id": "production",
-      "name": "Production",
+      "name": "GoblinCore Production",
       "region": "ca-central-1",
       "source": {
         "branch": "develop"
       },
       "services": [
         {
-          "id": "my-blitz",
-          "name": "My Blitz",
+          "id": "goblin-commerce-blitz",
+          "name": "GoblinCore blitz",
           "type": "fargate",
           "buildType": "nixpacks",
           "cpu": 0.25,
@@ -35,7 +35,7 @@
         },
         {
           "id": "db",
-          "name": "Database",
+          "name": "GoblinCore Database",
           "type": "rds",
           "engine": "postgres",
           "engineVersion": "13",
