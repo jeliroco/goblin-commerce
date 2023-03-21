@@ -4,7 +4,7 @@
     {
       "id": "production",
       "name": "Production",
-      "region": "canada-1",
+      "region": "ca-central-1",
       "source": {
         "branch": "develop"
       },
