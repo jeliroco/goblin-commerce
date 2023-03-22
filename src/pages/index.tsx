@@ -54,10 +54,10 @@ const Home: BlitzPage = () => {
     <Layout title="Home">
       <div className={styles.container}>
         <img src="/assets/under-construction.png" alt="Blitz.js Logo" className={styles.logo} />
-        <Heading as="h1" textAlign="center" size="lg" transform="auto" scaleX={0.7}>
+        <Heading color="#1e2718" as="h1" textAlign="center" size="lg" transform="auto" scaleX={0.7}>
           Guklak make website...
         </Heading>
-        <Heading as="h2" textAlign="center" size="md" transform="auto" scaleX={0.7}>
+        <Heading color="#1e2718" as="h2" textAlign="center" size="md" transform="auto" scaleX={0.7}>
           Check back later...
         </Heading>
         <div className={styles.buttonContainer}>
