@@ -11,7 +11,7 @@
       "services": [
         {
           "id": "goblin-commerce-blitz",
-          "name": "GoblinCore blitz",
+          "name": "GoblinCore Blitz",
           "type": "fargate",
           "buildType": "nixpacks",
           "cpu": 0.25,
