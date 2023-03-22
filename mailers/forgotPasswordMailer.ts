@@ -18,7 +18,7 @@ export function forgotPasswordMailer({ to, token }: ResetPasswordMailer) {
   const resetUrl = `${origin}/auth/reset-password?token=${token}`
 
   const msg: SendEmailRequest = {
-    Source: "TODO@example.com",
+    Source: "admin@goblincore.biz",
     Destination: {
       ToAddresses: [to],
     },
