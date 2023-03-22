@@ -6,7 +6,7 @@ import logout from "src/auth/mutations/logout"
 import { useMutation } from "@blitzjs/rpc"
 import { Routes, BlitzPage } from "@blitzjs/next"
 import styles from "src/styles/Home.module.css"
-import { Heading } from "@chakra-ui/react"
+import { Heading, Image } from "@chakra-ui/react"
 
 /*
  * This file is just for a pleasant getting started page for your new app.
@@ -53,7 +53,7 @@ const Home: BlitzPage = () => {
   return (
     <Layout title="Home">
       <div className={styles.container}>
-        <img src="/assets/under-construction.png" alt="Blitz.js Logo" className={styles.logo} />
+        <Image src="/assets/under-construction.png" alt="Blitz.js Logo" className={styles.logo} />
         <Heading color="#1e2718" as="h1" textAlign="center" size="lg" transform="auto" scaleX={0.7}>
           Guklak make website...
         </Heading>
