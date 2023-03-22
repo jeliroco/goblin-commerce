@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background: #dee4dd;
 }
 
 .main {
@@ -27,154 +28,14 @@
   border: 1px solid rgba(255, 255, 255, 0.31);
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  padding: 4rem 0rem 2rem 0rem;
+.title {
   text-align: center;
-  gap: 2rem;
-}
-
-.header h1 {
-  max-width: 620px;
-  align-self: center;
-}
-
-.body {
-  composes: frost;
-  border-radius: var(--border-radius);
-  display: flex;
-  padding: 1rem;
-  width: 100%;
-  flex-direction: row;
-  align-self: center;
-  max-width: calc(min(var(--screen-width), 800px));
-}
-
-.instructions {
-  display: inline-flex;
-  flex-direction: column;
-  padding: 1rem;
-  width: 100%;
-}
-
-.globe {
-  position: fixed;
-  width: 350vmin;
-  height: 75vmin;
-  left: 20%;
-  top: 50%;
-  transform: translate(-50%, calc(-50% + 40px));
-  z-index: -1;
-  border-radius: 100%;
-  background-image: radial-gradient(
-    95.63% 95.63% at 95.92% 0%,
-    rgba(255, 255, 255, 0.62) 0%,
-    #8155ff38 60.42%,
-    #002fff5c 169%
-  );
-  filter: blur(8vmin);
-}
-
-.footer {
-  display: flex;
-  padding: 2rem 0;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer span {
-  margin-right: 0.2rem;
-}
-
-.code {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.code span {
-  background: rgba(124, 58, 237, 50%);
-  border-radius: 50rem;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 17px;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(57, 33, 97);
-}
-
-.code pre {
-  background: rgba(124, 58, 237, 12%);
-  border-radius: 4px;
-  padding: 0.7em 1.4em;
-  text-align: center;
-}
-
-.code code {
-  font-size: 0.86em;
+  font-size: 3rem;
   font-weight: bold;
-  color: rgb(124, 58, 237);
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-.toastContainer {
-  border: 1px solid #edff;
-  padding: 0 1rem;
-  background: #eeff;
-  color: #62af;
+.subtitle {
   text-align: center;
-}
-
-.toastContainer strong {
-  color: rgb(124, 58, 237);
-}
-
-.textLink {
-  color: rgb(124, 58, 237);
-  background: linear-gradient(to right, rgba(231, 216, 246, 1), rgba(231, 216, 246, 1)),
-    linear-gradient(to right, rgba(99, 1, 235, 1), rgba(124, 58, 237, 1), rgba(231, 216, 246, 1));
-  background-size: 100% 1px, 0 1px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
-}
-
-.textLink:hover,
-.textLink:focus,
-.textLink:active {
-  background-size: 0 1px, 100% 1px;
-}
-
-.arrowIcon {
-  box-sizing: border-box;
-  display: block;
-  width: 8px;
-  height: 8px;
-  border-top: 2px solid;
-  transform: scale(var(--ggs, 1));
-  border-right: 2px solid;
-  position: absolute;
-  right: 6px;
-  top: 6px;
-  color: #b1a5c4;
-}
-
-.arrowIcon::after {
-  content: "";
-  display: block;
-  box-sizing: border-box;
-  position: absolute;
-  width: 8px;
-  height: 2px;
-  background: currentColor;
-  transform: rotate(-45deg);
-  top: 2px;
-  right: -1px;
 }
 
 .buttonContainer {
@@ -187,8 +48,8 @@
 }
 
 .button {
-  background: linear-gradient(to top, rgb(124, 58, 237), rgb(117, 81, 236));
-  border: 1px solid rgb(231, 216, 246);
+  background: #939792;
+  border: 2px solid #6c6f6c;
   color: white;
   text-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
   padding: 0 24px;
@@ -212,7 +73,7 @@
 .button:hover {
   color: white;
   text-shadow: rgb(0 0 0 / 56%) 0px 3px 12px;
-  box-shadow: rgb(80 63 205 / 50%) 0px 1px 40px;
+  box-shadow: #484a48 0px 1px 40px;
 }
 
 .loginButton {
@@ -229,7 +90,7 @@
 }
 
 .card:hover .arrowIcon {
-  color: #7450ec;
+  color: #dee4dd;
 }
 
 .linkGrid {
@@ -258,8 +119,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #7450ec;
-  border-color: #7450ec;
+  color: #dee4dd;
+  border-color: #dee4dd;
 }
 
 .card h2 {
@@ -274,14 +135,10 @@
 }
 
 .logo {
-  flex: 1;
+  width: 500px;
+  margin: auto;
   padding: 1rem 2rem;
-}
-
-.logo svg {
-  height: 100%;
-  width: 200px;
-  fill: #7450ec;
+  border-radius: 20%;
 }
 
 /* MOBILE */

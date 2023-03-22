@@ -1779,6 +1779,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/goblin-one@4.5.10":
+  version "4.5.10"
+  resolved "https://registry.npmjs.org/@fontsource/goblin-one/-/goblin-one-4.5.10.tgz#99abe0d9ef020b1209bfcc2d8ae2ca9fc1baafbf"
+  integrity sha512-jXqERo7fv2o+R3kKGwKIkQMgzdzjaFApNlXqINw4o8ZvGEQYI7wjPH4HGVEjRcmaoqc5mjTUa9WXQJYTbJYJUA==
+
 "@humanwhocodes/config-array@^0.11.6":
   version "0.11.8"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.8.tgz#03595ac2075a4dc0f191cc2131de14fbd7d410b9"
