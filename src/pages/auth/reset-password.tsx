@@ -38,6 +38,7 @@ const ResetPasswordPage: BlitzPage = () => {
             try {
               await resetPasswordMutation({ ...values, token })
             } catch (error: any) {
+              console.log(error)
               if (error.name === "ResetPasswordError") {
                 return {
                   [FORM_ERROR]: error.message,
